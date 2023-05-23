@@ -16,7 +16,7 @@
         "dnsLabelPrefix" : {
             "value": "prwinsrv2019"
         },
-        "domainFQDN": {
+        "domainToJoin": {
             "value": "sk8s.com"
         },
         "ouPath": {
