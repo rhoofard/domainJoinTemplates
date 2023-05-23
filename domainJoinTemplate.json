@@ -64,7 +64,7 @@
                 "Name": "[parameters('domainFQDN')]",
                 "User": "[concat(parameters('domainToJoin'), '\\', parameters('domainUsername'))]",
                 "Restart": "true",
-                "Options": "[parameters'domainJoinOptions')]",
+                "Options": "[parameters('domainJoinOptions')]",
                 "OUPath": "[parameters('ouPath')]"
             },
                 "protectedSettings": {
