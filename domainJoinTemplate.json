@@ -61,7 +61,7 @@
             "typeHandlerVersion": "1.3",
             "autoUpgradeMinorVersion": true,
             "settings": {
-                "Name": "[parameters('domainFQDN')]",
+                "Name": "[parameters('domainToJoin')]",
                 "User": "[concat(parameters('domainToJoin'), '\\', parameters('domainUsername'))]",
                 "Restart": "true",
                 "Options": "[parameters('domainJoinOptions')]",
