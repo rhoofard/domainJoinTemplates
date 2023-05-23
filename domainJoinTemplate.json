@@ -34,7 +34,7 @@
                 "description": "Domain user password"
             }
         },
-        "domainFQDN": {
+        "domainToJoin": {
             "type": "string",
             "metadata": {
                 "description": "Domain FQDN where the virtual machine will be joined"
