@@ -38,7 +38,8 @@
             "type": "string",
             "metadata": {
                 "description": "Domain FQDN where the virtual machine will be joined"
-            }
+            },
+            "defaultValue": "sk8s.com"
         },
         "ouPath": {
             "type": "string",
