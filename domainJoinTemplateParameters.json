@@ -1,26 +1,29 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "domainJoinUserName": {
-            "value": "aduser"
-        },
-        "domainJoinUserPassword": {
-        "reference": {
-            "keyVault": {
-                "id": "/subscriptions/8fda8d9a-b6a6-4de8-8d5e-96284cb950ff/resourceGroups/ansibleTesting/providers/Microsoft.KeyVault/vaults/ryanhDomainJoin"
-            },
-            "secretName": "domainPassword"
-        }
-        },
-        "dnsLabelPrefix" : {
+        "vmList": {
             "value": "prwinsrv2019"
         },
-        "domainToJoin": {
+        "location": {
+            "value": "eastus"
+        },
+        "domainJoinUserName": {
+            "value": "sk8s.com\\aduser"
+        },
+        "domainJoinUserPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/8fda8d9a-b6a6-4de8-8d5e-96284cb950ff/resourceGroups/ansibleTesting/providers/Microsoft.KeyVault/vaults/ryanhDomainJoin"
+                },
+                "secretName": "domainPassword"
+            }
+        },
+        "domainFQDN": {
             "value": "sk8s.com"
         },
         "ouPath": {
-            "value": "OU=Test;DC=sk8s,DC=com"
+            "value": ""
         }
     }
 }
